@@ -426,11 +426,11 @@
   <header class="navbar">
     <div class="brand">
       <div class="brand-icon">💬</div>
-      <span>LiveChat Groups</span>
+      <span>Live Chat Room</span>
     </div>
     <div class="live-counter">
       <span class="pulse-dot"></span>
-      <span id="onlineTotal">48,920 Online</span>
+      <span id="onlineTotal">47,920 Online</span>
     </div>
   </header>
 
@@ -460,7 +460,7 @@
   <div class="live-toast" id="liveToast">
     <img src="assets/profile1.jpg" alt="User" class="toast-avatar" id="toastImg">
     <div class="toast-body">
-      <div class="toast-title" id="toastName">Nadia Islam • Online</div>
+      <div class="toast-title" id="toastName">Sathi Islam • Online</div>
       <div class="toast-msg" id="toastText">💬 Sent you a group invite! Tap to join...</div>
     </div>
     <div class="toast-cta">Chat Now</div>
@@ -479,18 +479,18 @@
 
     // বাঙালি ও বিদেশি মিলিয়ে ১২টি নতুন প্রোফাইল ডেটা
     const profiles = [
-      { name: "Nadia Islam", city: "Dhaka, Bangladesh", members: "22.4K", online: "3.2K", rating: "5.0", status: "🎥 Live Video Room", img: "assets/profile1.jpg" },
-      { name: "Emily Carter", city: "Miami, FL, USA", members: "21.4K", online: "3.1K", rating: "5.0", status: "💬 Typing in chat...", img: "assets/profile2.jpg" },
-      { name: "Sadia Rahman", city: "Chittagong, BD", members: "19.8K", online: "2.8K", rating: "5.0", status: "🟢 Active 1m ago", img: "assets/profile3.jpg" },
-      { name: "Chloe Bennett", city: "Los Angeles, USA", members: "18.9K", online: "2.4K", rating: "5.0", status: "🔥 Popular Group", img: "assets/profile4.jpg" },
-      { name: "Farhana Akter", city: "Sylhet, Bangladesh", members: "17.5K", online: "2.3K", rating: "4.9", status: "🎙️ Audio Call Open", img: "assets/profile5.jpg" },
-      { name: "Sophia Miller", city: "New York, USA", members: "20.1K", online: "2.9K", rating: "5.0", status: "💬 Free Group Chat", img: "assets/profile6.jpg" },
-      { name: "Tania Chowdhury", city: "Kolkata, India", members: "18.3K", online: "2.5K", rating: "5.0", status: "🟢 Online Now", img: "assets/profile7.jpg" },
-      { name: "Aria Brooks", city: "London, UK", members: "16.8K", online: "2.1K", rating: "4.9", status: "🎥 Cam Chat Active", img: "assets/profile8.jpg" },
-      { name: "Mim Hasan", city: "Dhaka, Bangladesh", members: "19.1K", online: "2.7K", rating: "5.0", status: "💬 Join Free Room", img: "assets/profile9.jpg" },
-      { name: "Hannah Foster", city: "Toronto, Canada", members: "16.9K", online: "2.2K", rating: "5.0", status: "🟢 Active Now", img: "assets/profile10.jpg" },
-      { name: "Sumaiya Jahan", city: "Khulna, Bangladesh", members: "17.6K", online: "2.1K", rating: "4.9", status: "🔥 24/7 Live Chat", img: "assets/profile11.jpg" },
-      { name: "Elena Rostova", city: "Austin, TX, USA", members: "18.6K", online: "2.5K", rating: "5.0", status: "💬 Waiting for you", img: "assets/profile12.jpg" }
+      { name: "Sathi Islam", city: "Dhaka, Bangladesh", members: "22.4K", online: "3.2K", rating: "5.0", status: "🎥 Live Video Room", img: "profile1.jpg" },
+      { name: "Emily Carter", city: "Miami, FL, USA", members: "21.4K", online: "3.1K", rating: "5.0", status: "💬 Typing in chat...", img: "profile2.jpg" },
+      { name: "Sadia Rahman", city: "Chittagong, BD", members: "19.8K", online: "2.8K", rating: "5.0", status: "🟢 Active 1m ago", img: "profile3.jpg" },
+      { name: "Chloe Bennett", city: "Los Angeles, USA", members: "18.9K", online: "2.4K", rating: "5.0", status: "🔥 Popular Group", img: "profile4.jpg" },
+      { name: "Farhana Akter", city: "Sylhet, Bangladesh", members: "17.5K", online: "2.3K", rating: "4.9", status: "🎙️ Audio Call Open", img: "profile5.jpg" },
+      { name: "Sophia Miller", city: "New York, USA", members: "20.1K", online: "2.9K", rating: "5.0", status: "💬 Free Group Chat", img: "profile6.jpg" },
+      { name: "Tania Chowdhury", city: "Kolkata, India", members: "18.3K", online: "2.5K", rating: "5.0", status: "🟢 Online Now", img: "profile7.jpg" },
+      { name: "Aria Brooks", city: "London, UK", members: "16.8K", online: "2.1K", rating: "4.9", status: "🎥 Cam Chat Active", img: "profile8.jpg" },
+      { name: "Mim Hasan", city: "Dhaka, Bangladesh", members: "19.1K", online: "2.7K", rating: "5.0", status: "💬 Join Free Room", img: "profile9.jpg" },
+      { name: "Hannah Foster", city: "Toronto, Canada", members: "16.9K", online: "2.2K", rating: "5.0", status: "🟢 Active Now", img: "profile10.jpg" },
+      { name: "Sumaiya Jahan", city: "Khulna, Bangladesh", members: "17.6K", online: "2.1K", rating: "4.9", status: "🔥 24/7 Live Chat", img: "profile11.jpg" },
+      { name: "Elena Rostova", city: "Austin, TX, USA", members: "18.6K", online: "2.5K", rating: "5.0", status: "💬 Waiting for you", img: "profile12.jpg" }
     ];
 
     // কার্ডগুলো রেন্ডার করা
@@ -525,9 +525,9 @@
 
     // লাইভ টোস্ট নোটিফিকেশন অটো-চেঞ্জ
     const toastMessages = [
-      { name: "Nadia Islam • Online", msg: "💬 Sent you a group invite! Tap to join...", img: "assets/profile1.jpg" },
-      { name: "Emily Carter • Live", msg: "🎥 Started a live video room nearby...", img: "assets/profile2.jpg" },
-      { name: "Sadia Rahman • Active", msg: "👋 Hey! 12 new members joined our chat...", img: "assets/profile3.jpg" }
+      { name: "Sathi Islam • Online", msg: "💬 Sent you a group invite! Tap to join...", img: "profile1.jpg" },
+      { name: "Emily Carter • Live", msg: "🎥 Started a live video room nearby...", img: "profile2.jpg" },
+      { name: "Sadia Rahman • Active", msg: "👋 Hey! 12 new members joined our chat...", img: "profile3.jpg" }
     ];
     let toastIndex = 0;
     setInterval(() => {
